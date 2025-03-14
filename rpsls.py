@@ -19,11 +19,11 @@ COMMANDS:
   HELP           - Prints this.
   SHELDON        - Summons Sheldon.
   CLEAR | CLS    - Clears screen.
-  EXIT | QUIT    - Kills rpsls.
+  EXIT | QUIT    - Kills rpsls.py!
 
 GAME MODES:
-  SINGLE | SINGLEPLAYER | 1 | ONE | MONO - Play against randomness.
-  MULTI | MULTIPLAYER | 2 | TWO | DUO    - Play against another player.
+  SINGLE | SINGLE | 1 | ONE | MONO - Play against randomness.
+  MULTI | MULTI | 2 | TWO | DUO    - Play against another player.
 """
 
 
@@ -82,12 +82,12 @@ def playGame(player1, player2, single):
 def main():
     clear()
     while True:
-        mode = input("SINGLEPLAYER | MULTIPLAYER: ").strip().upper()
+        mode = input("SINGLE | MULTI: ").strip().upper()
         if handleCommands(mode):
             continue
             
-        single = mode in ["SINGLE", "SINGLEPLAYER", "1", "ONE", "MONO"]
-        multi  = mode in ["MULTI", "MULTIPLAYER", "2", "TWO", "BI", "DUO"]
+        single = mode in ["SINGLE", "1", "ONE", "MONO"]
+        multi  = mode in ["MULTI", "2", "TWO", "BI", "DUO"]
         
         if not (single or multi):
             print("ERROR: INVALID CHOICE!")
