@@ -17,8 +17,8 @@ WINS = {
 regularHelp = """
 COMMANDS:
   HELP           - Prints this.
-  SHELDON        - Summons Sheldon.
-  CLEAR | CLS    - Clears screen.
+  SHELDON        - SUMMONS SHELDON.
+  CLEAR | CLS    - Cleans everything...
   EXIT | QUIT    - Kills rpsls.py!
 
 GAME MODES:
@@ -106,4 +106,4 @@ def main():
                 playGame(player1, player2, False)
 
 if __name__ == "__main__":
-    main()
+    main()  

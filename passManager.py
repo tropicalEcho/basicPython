@@ -104,7 +104,7 @@ def main():
                 rating = ratePass(" ".join(uiParts[1:]))
                 print(f"PASSWORD STRENGTH: {rating}")
         else:
-            print(f"INVALID COMMAND {cmd}")
+            print(f"INVALID COMMAND '{cmd}'")
             continue
 if __name__ == "__main__":
     main()
