@@ -1,12 +1,10 @@
 import os, sys
 
-basicHelp = """
+helpText = """
 COMMANDS:
     HELP        - Prints this.
     CLEAR | CLS - Cleans Everything...
     EXIT | QUIT - Kills morseTranslator.py!
-"""
-morseHelp = """
 MORSE:
     <TEXT>  - Translates to Morse code.
     <MORSE> - Translates to Regular English Text.
@@ -52,7 +50,7 @@ def main():
         elif cmd in {"EXIT", "QUIT"}:
             sys.exit("GOODBYE!")
         elif cmd in {"HELP"}:
-            print(basicHelp, morseHelp)
+            print(helpText)
         else:
             translate(userInput)
                 

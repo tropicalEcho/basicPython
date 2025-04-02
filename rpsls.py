@@ -1,13 +1,11 @@
 import os, random, sys, time
 
-basicHelp = """
+helpText = """
 COMMANDS:
     CLEAR | CLS - Cleans Everything...
     EXIT | QUIT - Kills rpsls.py!
     HELP        - Prints this.
     SHELDON     - Summons Sheldon Lee Cooper?!
-"""
-gameModesHelp = """
 GAME MODES:
     MONO - Play against randomness.
     DUO  - Play against another player.
@@ -48,7 +46,7 @@ def handleCommands(cmd):
     elif cmd == "SHELDON":
         print(sheldonHelp)
     elif cmd == "HELP":
-        print(basicHelp, gameModesHelp)
+        print(helpText)
     else:
         return False
     return True
